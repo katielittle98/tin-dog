@@ -12,7 +12,7 @@ let currentDog = new Dog(dogs[currentIndex])
 
 render()
 
-
+// Function for liking a dog
 likeBtn.addEventListener("click", function() {
     currentDog.hasBeenLiked = true;
         setTimeout(function() {
@@ -27,6 +27,7 @@ likeBtn.addEventListener("click", function() {
         }, 1500)
 })
 
+// Function for disliking a dog
 dislikeBtn.addEventListener("click", function() {
     currentDog.hasBeenLiked = false;
         setTimeout(function() {
@@ -43,12 +44,12 @@ dislikeBtn.addEventListener("click", function() {
          }, 1500)
 })
 
-
+// Get new dog profile
 function render() {
     card.innerHTML = currentDog.generateProfile()
 }
 
-
+// Function for swiping to receive next dog
 function swipe() {
     if (currentIndex == (dogs.length) - 1) {
         

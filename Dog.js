@@ -1,8 +1,4 @@
-
-import { dogs } from '/data.js'
-
-const card = document.getElementById("card")
-const noMoreLikes = document.getElementById("no-more-likes")
+// Class for generating a new dog profile
 
 class Dog {
     constructor(data) {
